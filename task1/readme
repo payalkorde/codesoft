@@ -1,1 +1,51 @@
+# 🚢 Titanic Survival Prediction
+
+This project predicts whether a passenger survived the Titanic disaster using Machine Learning.
+
+## 📌 Dataset
+
+The dataset contains information about passengers like:
+
+* Age
+* Gender
+* Ticket class
+* Fare
+* Family members
+
+## ⚙️ Steps Performed
+
+* Data Cleaning
+* Handling Missing Values
+* Encoding Categorical Variables
+* Exploratory Data Analysis (EDA)
+* Model Training (Logistic Regression)
+* Model Evaluation
+
+## 🤖 Models Used
+
+* Logistic Regression
+
+## 📊 Results
+
+* Logistic Regression Accuracy: ~80%
+
+## 🚀 Tools Used
+
+* Python
+* Pandas
+* Seaborn
+* Scikit-learn
+* Google Colab
+
+## 📁 Files
+
+* `Titanic_Survival.ipynb` → Main notebook
+
+## 💡 Conclusion
+
+The model successfully predicts passenger survival with around 80% accuracy using basic preprocessing and logistic regression.
+
+---
+
+⭐ If you like this project, give it a star!
 
