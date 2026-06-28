@@ -1,1 +1,149 @@
+# 🎬 Movie Rating Prediction
+
+This project aims to build a machine learning model to predict movie ratings based on features such as year of release, duration, genre, director, and actors. The goal is to analyze factors influencing movie ratings and develop a predictive system that estimates a movie's potential rating.
+
+---
+
+## 📌 Dataset
+
+The analysis is based on the **IMDb India Movies dataset**, which includes:
+
+* Movie Name
+* Year of Release
+* Duration
+* Genre
+* Rating ⭐ (Target Variable)
+* Votes
+* Director 🎬
+* Actor 1, Actor 2, Actor 3 ⭐
+
+---
+
+## ⚙️ Key Steps & Analysis
+
+### 1. Data Loading & Initial Exploration
+
+* Dataset loaded from `IMDb Movies India.csv`
+* Identified missing values in:
+
+  * Year, Duration, Genre, Rating, Votes
+  * Director, Actor 1, Actor 2, Actor 3
+
+---
+
+### 2. Data Cleaning & Preprocessing
+
+#### Missing Values Handling
+
+* **Rating & Duration** → filled using median
+* **Year & Votes** → cleaned and filled with median
+* Categorical columns → filled with `"Unknown"`
+
+#### Data Cleaning
+
+* Duration → removed `"min"` and converted to numeric
+* Year → extracted 4-digit format
+* Votes → removed commas and converted to numeric
+
+#### Data Type Conversion
+
+* Converted all columns into appropriate formats
+
+---
+
+### 3. Exploratory Data Analysis (EDA)
+
+* 📊 **Rating Distribution** → Histogram visualization
+* 🎬 **Top Directors** → Top 10 by average rating
+* 🎭 **Genre Analysis** → Average rating per genre
+* 📈 **Votes vs Rating** → Relationship analysis
+* ⭐ **Actor Influence** → Top actors by average ratings
+
+---
+
+### 4. Feature Engineering 🚀
+
+* **One-Hot Encoding** for Genre
+* Created new features:
+
+  * `Director_Avg_Rating`
+  * `Actor1_Avg_Rating`
+  * `Actor2_Avg_Rating`
+  * `Actor3_Avg_Rating`
+
+👉 These features capture historical performance of directors and actors
+
+---
+
+### 5. Model Building & Evaluation
+
+#### Model Used:
+
+* Linear Regression
+
+#### Feature Selection:
+
+* Year
+* Duration
+* Votes
+* Genre (encoded)
+* Director & Actor average ratings
+
+#### Train-Test Split:
+
+* 80% Training
+* 20% Testing
+
+---
+
+## 📊 Model Performance
+
+* **Mean Squared Error (MSE):** 0.3022
+* **R-squared (R²):** 0.6892
+
+👉 ~68.9% of rating variance explained by the model
+
+---
+
+## 📈 Visualizations
+
+* Actual vs Predicted Ratings (Scatter Plot)
+* Residual Plot (Error distribution)
+
+---
+
+## 💡 Key Insights
+
+* Directors and actors significantly influence ratings
+* Genre impacts audience perception
+* Popularity (votes) correlates with ratings
+* Feature engineering improves model performance
+
+---
+
+## 📌 Conclusion
+
+This project demonstrates the application of machine learning for predicting movie ratings using structured data. By incorporating feature engineering techniques such as director and actor average ratings, the model achieved strong predictive performance.
+
+The project highlights the importance of data preprocessing, feature engineering, and model evaluation. It can be extended into real-world applications such as movie recommendation systems or industry trend analysis.
+
+---
+
+## 🚀 Tools & Technologies
+
+* Python
+* Pandas, NumPy
+* Matplotlib, Seaborn
+* Scikit-learn
+* Google Colab
+
+---
+
+## 📁 Project Structure
+
+* `movie_rating_prediction.ipynb` → Main notebook
+
+---
+
+⭐ If you found this project useful, consider giving it a star!
 
