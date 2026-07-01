@@ -1,1 +1,105 @@
+# 🌸 Iris Flower Classification
+
+This project builds a machine learning model to classify iris flowers into three species — *Setosa*, *Versicolor*, and *Virginica* — based on their physical characteristics.
+
+---
+
+## 📌 Dataset
+
+The dataset used is the famous **Iris dataset**, which contains:
+
+* Sepal Length
+* Sepal Width
+* Petal Length
+* Petal Width
+* Species (Target Variable)
+
+---
+
+## ⚙️ Steps Performed
+
+### 1. Data Loading & Exploration
+
+* Loaded dataset using Seaborn
+* Displayed dataset structure and summary statistics
+* Checked for missing values (none found)
+* Analyzed class distribution
+
+---
+
+### 2. Exploratory Data Analysis (EDA)
+
+* 📊 Pair Plot to visualize relationships between features
+* 📦 Boxplots for feature distribution by species
+* 📈 Scatter plots for petal comparisons
+* 🥧 Pie chart for species distribution
+
+---
+
+### 3. Data Preprocessing
+
+* Separated features (X) and target (y)
+* Encoded species labels using Label Encoding
+
+---
+
+### 4. Model Building 🤖
+
+* Algorithm used: **Random Forest Classifier**
+* Split data:
+
+  * 70% Training
+  * 30% Testing
+
+---
+
+### 5. Model Evaluation 📊
+
+* Accuracy Score
+* Classification Report
+* Confusion Matrix
+
+👉 **Accuracy Achieved: 100%**
+
+---
+
+### 6. Visualization of Results
+
+* Confusion Matrix Heatmap
+* Feature distribution plots
+* Interactive plots using Plotly:
+
+  * 2D Scatter Plot
+  * 3D Scatter Plot
+
+---
+
+## 📈 Key Insights
+
+* Petal length and petal width are the most important features
+* Setosa is easily separable from other species
+* Versicolor and Virginica have some overlap
+
+---
+
+## 📌 Conclusion
+
+This project demonstrates how machine learning can be used for classification tasks. The Random Forest model performed exceptionally well, achieving perfect accuracy on the test dataset.
+
+The project highlights the importance of visualization, feature understanding, and proper model evaluation in building reliable machine learning models.
+
+---
+
+## 🚀 Tools & Technologies
+
+* Python
+* Pandas, NumPy
+* Seaborn & Matplotlib
+* Plotly Express
+* Scikit-learn
+* Google Colab
+
+---
+
+⭐ If you found this project useful, consider giving it a star!
 
